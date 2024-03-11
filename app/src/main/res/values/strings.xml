@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="image_onboarding">Image onboarding</string>
+    <string name="onboarding_bg">onboarding bg</string>
+    <string name="skip_btn">Пропустить</string>
+    <string name="next_btn">Далее</string>
+</resources>
