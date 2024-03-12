@@ -6,19 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Onboarding">
 
-
-    <!--    <Button-->
-<!--        android:id="@+id/Button_1"-->
-<!--        android:layout_width="100pt"-->
-<!--        android:layout_height="30pt"-->
-<!--        android:text="TEST"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.497"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.535" />-->
-
+    <!-- BG Image -->
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="637dp"
@@ -27,7 +15,7 @@
         android:contentDescription="@string/onboarding_bg"
         android:src="@drawable/onboarding"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf=" parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,52 +34,53 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.329">
 
+        <!-- Onboarding img -->
         <ImageView
+            android:id="@+id/onboarding_img"
             android:layout_width="100pt"
             android:layout_height="100pt"
             android:src="@drawable/onboarding_img_1"
-            android:contentDescription="@string/image_onboarding">
+            android:contentDescription="@string/image_onboarding"/>
 
-        </ImageView>
-
+        <!-- Title -->
         <TextView
+            android:id="@+id/onboarding_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24pt"
+            android:layout_marginTop="2pt"
             android:layout_marginBottom="12pt"
 
-            android:text="Заголовок"
             android:textColor="@color/text_color"
             android:fontFamily="@font/roboto_regular"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:textAlignment="center"/>
 
-        </TextView>
-
+        <!-- Description -->
         <TextView
+            android:id="@+id/onboarding_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Описание"
             android:textColor="@color/text_color"
             android:fontFamily="@font/roboto_regular"
-            android:textSize="14sp">
-
-        </TextView>
+            android:textSize="14sp"
+            android:textAlignment="center"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginBottom="100dp"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
 
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:layout_marginBottom="100dp"
         android:layout_marginHorizontal="10pt">
 
         <LinearLayout
+            android:id="@+id/skip_btn"
             android:layout_width="55pt"
             android:layout_height="wrap_content"
 
@@ -116,13 +105,12 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-        </LinearLayout>
+            android:layout_weight="1"/>
 
         <LinearLayout
+            android:id="@+id/next_btn"
             android:layout_width="55pt"
             android:layout_height="wrap_content"
 
@@ -134,6 +122,7 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/next_btn_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 

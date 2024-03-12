@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+    tools:context=".AuthProfile">
+
+
+<!--    FirstConteiner-->
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="77dp"
+
+        android:background="@drawable/profile_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.020"
+
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="7pt"
+                android:layout_marginLeft="8pt"
+
+                android:background="@drawable/avatar"/>
+
+
+
+<!--            Name and Email container-->
+            <LinearLayout
+                android:layout_width="90pt"
+                android:layout_height="77dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="50pt"
+                    android:layout_height="9pt"
+                    android:text="@string/user_name"
+                    android:textColor="@color/white"
+
+                    android:layout_marginTop="8pt"
+                    android:layout_marginStart="5pt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="60pt"
+                    android:layout_height="10pt"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginBottom="50dp"
+
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="sample@mail.ru"
+                    android:textColor="#7D7E80"
+                    android:textSize="16sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+        
+            <ImageView
+                android:layout_width="10.5dp"
+                android:layout_height="17.5dp"
+
+                android:background="@drawable/keyboard_arrow_right"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="60dp">
+
+            </ImageView>
+
+    </LinearLayout>
+
+<!--    SecondConteiner-->
+    <LinearLayout
+        android:id="@+id/secondContainer"
+
+        android:layout_width="361dp"
+        android:layout_height="230dp"
+
+        android:background="@drawable/profile_line"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.207">
+
+
+<!--        First line-->
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="4dp"
+            
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_width="16.5dp"
+                android:layout_height="20.8dp"
+
+                android:background="@drawable/location_on"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:text="Геопозиция"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="#7D7E80"
+                
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+                
+            </TextView>
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="12.5dp"
+
+                android:background="@drawable/keyboard_arrow_right"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+
+<!--        Second Line-->
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="12dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16.5dp"
+                android:layout_height="20.8dp"
+
+                android:background="@drawable/notifications"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:text="Уведомления"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="#7D7E80"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="12.5dp"
+
+                android:background="@drawable/keyboard_arrow_right"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+
+<!--        Third Line-->
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="12dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16.5dp"
+                android:layout_height="20.8dp"
+
+                android:background="@drawable/credit_card_gear"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:text="Карты"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="#7D7E80"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="12.5dp"
+
+                android:background="@drawable/keyboard_arrow_right"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+
+<!--        Fourd Line-->
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="12dp"
+
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="16.5dp"
+                android:layout_height="20.8dp"
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="14dp"
+                android:background="@drawable/shield">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Безопасность"
+
+                android:textColor="#7D7E80"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="12.5dp"
+
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginTop="18dp"
+                android:background="@drawable/keyboard_arrow_right">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    ThirdConteiner-->
+    <LinearLayout
+        android:id="@+id/thirdContainer"
+
+        android:layout_width="361dp"
+        android:layout_height="120dp"
+
+        android:background="@drawable/profile_line"
+        android:orientation="vertical"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondContainer">
+
+
+<!--        First Line-->
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="6dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.8dp"
+                android:layout_height="20.8dp"
+
+                android:background="@drawable/stars"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:text="Достижения"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="#7D7E80"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="12.5dp"
+
+                android:background="@drawable/keyboard_arrow_right"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp">
+            </ImageView>
+
+        </LinearLayout>
+
+
+<!--        Second Line-->
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="12dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.8dp"
+                android:layout_height="20.8dp"
+
+                android:background="@drawable/diversity_2"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:text="Реферальная система"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="#7D7E80"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="12.5dp"
+
+                android:background="@drawable/keyboard_arrow_right"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp">
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    FourthConteiner-->
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="65dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile_line"
+
+        android:orientation="horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thirdContainer">
+
+        <ImageView
+            android:layout_width="20.8dp"
+            android:layout_height="20.8dp"
+
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="21dp"
+            android:background="@drawable/logout">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Выход"
+
+            android:textColor="#7D7E80"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="7.5dp"
+            android:layout_height="12.5dp"
+
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginTop="26dp"
+            android:background="@drawable/keyboard_arrow_right">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
